@@ -1,4 +1,5 @@
 import { useState } from "react"
+import Card from "./components/card";
 
 
 function App() {
@@ -12,7 +13,7 @@ function App() {
  const [color,setColor] = useState("green")
   return (
     <>
-    <div className="duration-300 w-full h-screen"
+    <div className=" flex items-center justify-center duration-300 w-full h-screen"
     style={{backgroundColor : color}}
     >
       <div className="flex flex-wrap fixed bottom-16 inset-x-0  p-2  justify-center  rounded-2xl">
@@ -28,6 +29,7 @@ function App() {
           
         </div>
       </div>
+      <Card/>
 
     </div>
     </>
